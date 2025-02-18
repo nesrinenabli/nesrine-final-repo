@@ -1,9 +1,14 @@
 import * as React from "react";
-function App() {
-  return(
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
+function getTitle(title) {
+  return title;
 }
-export default App;
+function App(){
+  return( 
+    <div>
+    <h1>Hello{getTitle("React")}</h1>
+    <label htmlFor="search">Search: </label>
+    <input id="search" type="text" />
+    </div>
+    );
+  }
+  export default App;
