@@ -1,4 +1,5 @@
 import * as React from "react";
+
 function List() {
   return ( 
     <ul>  
@@ -17,5 +18,39 @@ function List() {
       </ul> 
         ); 
       } 
+    
+    function App()
+       { 
+          return (     
+          <div>       
+            <h1>My Hacker Stories</h1>
+         <label htmlFor="search">Search: </label>
+        <input id="search" type="text" />
+       <hr /> 
+          <List /> 
+            </div>
+         ); } 
+         
+    function Search() 
+         {   
+          return ( 
+            <div>       
+              <label htmlFor="search">Search: </label>       
+              <input id="search" type="text" />
+                   </div>   
+                   );
+                  
+                } 
+    function App() {
+                   return (
+                     <div>
+               <h1>My Hacker Stories</h1> 
+               <Search /> 
+               <hr /> 
+               <List />
+                </div>
+                 ); 
+                } 
 
   export default App;
+
